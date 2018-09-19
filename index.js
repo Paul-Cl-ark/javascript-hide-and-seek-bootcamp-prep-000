@@ -9,11 +9,12 @@ function nestedTarget(idName, className) {
 function increaseRankBy(n) {
   const ranksToIncrease = document.querySelectorAll('ul.ranked-list li');
   for (let i = 0; i < ranksToIncrease.length; i++) {
-  ranksToIncrease[i].innerHTML = (parseInt((ranksToIncrease[i].innerHTML)) + n)
+  ranksToIncrease[i].innerHTML = (parseInt((ranksToIncrease[i].innerHTML)) + n);
   }
   return ranksToIncrease;
 }
 
 function deepestChild() {
-  
+  const boo = document.querySelectorAll('#grand-node div');
+  return boo[boo.length -1];
 }
